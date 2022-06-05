@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
-  return "srt"
+  return str
   
 }
 
@@ -73,11 +73,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 === str2) {
-    return true
-  } else 
-    return false
-  
+  return str1.lengh === str2.lengh
 }
 
 function menosQueNoventa(num) {
@@ -182,14 +178,15 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return "str" + "!"
+  return str + '!'
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "Franco" + " " + "Moreno"
+  var combinado = nombre + ' ' + apellido;
+  return combinado
 }
 
 function obtenerSaludo(nombre) {
@@ -237,14 +234,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-if (letra === a || letra === e || letra === i || letra === o || letra === u) {
-  return "Es vocal"
-} else if (letra !== a || letra !== e || letra !== i || letra !== o || letra !== u) {
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
   return "Dato incorrecto"
-} else {letra.lengh > 1; 
-  return "Dato incorrecto" 
-  
-}
 }
 
 
